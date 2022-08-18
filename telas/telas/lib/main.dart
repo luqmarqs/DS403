@@ -1,3 +1,10 @@
+//******************
+//
+//Desenvolvido em aula no dia 16/08/2022
+// Lucas Marques de Almeida
+//
+// */
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,12 +20,30 @@ class MinhaTela extends StatelessWidget {
     return MaterialApp(
         title: 'Tela1',
         debugShowCheckedModeBanner: true,
-        home: Center(
-            child: Container(
-          height: 200,
-          width: 200,
-          color: Color.fromARGB(255, 100, 45, 56),
-          child: FlutterLogo(size: 40),
-        )));
+        home: Column(
+          children: [
+            Center(
+                child: Container(
+              height: 200,
+              width: 200,
+              color: Color.fromARGB(255, 100, 45, 56),
+              child: FlutterLogo(size: 40),
+            )),
+            Center(
+                child: Container(
+              height: 200,
+              width: 200,
+              color: Color.fromARGB(255, 100, 45, 56),
+              child: FlutterLogo(size: 40),
+            )),
+            Center(
+                child: Container(
+              height: 200,
+              width: 200,
+              color: Color.fromARGB(255, 100, 45, 56),
+              child: FlutterLogo(size: 40),
+            ))
+          ],
+        ));
   }
 }
